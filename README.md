@@ -11,7 +11,7 @@ composer require lordarryn/psrrouter
 ### Example :
 For example, I use react/http server and the router. I created an other file where I wrote the routes and I include this file in the main program.<br />
 routing.php :
-```
+```PHP
 <?php
 //This is a basic to-do list with PSR interfaces
 use PsrRouter\PsrRouter as Router;
@@ -71,7 +71,7 @@ $app->get('/del-{id}', function($req, $res, $id) {
 ```
 <br />
 server.php :
-```
+```PHP
 <?php
 
 //react/http server
