@@ -1,0 +1,16 @@
+{
+    "name": "lordarryn/psrrouter",
+    "description": "Basic router developped with PSR interfaces. Supports GET, POST, PUT, DELETE, OPTIONS, PATCH methods and 400, 404 and 405 errors.",
+    "keywords": ["http", "router", "psr", "route", "url"],
+    "type": "library",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "PsrRouter\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "psr/http-message": "^1.0"
+    }
+}
