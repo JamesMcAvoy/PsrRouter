@@ -252,6 +252,7 @@ class PsrRouter {
 		$method = $request->getMethod();
 		$url = $request->getRequestTarget();
 
+<<<<<<< HEAD
 		//Matching
 		foreach($this->routes as $route) {
 			if($route->match($url, $strict, $case) && $method == $route->getMethod()) {
@@ -265,6 +266,14 @@ class PsrRouter {
 		}
 
 		//Error
+=======
+		foreach($this->routes as $route) {
+			if($route->match($url, $strict, $case) && $method == $route->getMethod()) {
+				return $route->call($request, $response);
+			}
+		}
+
+>>>>>>> origin/master
 		$methods = array();
 		foreach($this->routes as $route) {
 			array_push($methods, $route->getMethod());
