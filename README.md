@@ -18,7 +18,7 @@ composer require zendframework/zend-diactoros
 ```
 
 ### Doc
-Create a method :
+Create a route :
 ```PHP
 $app->${$method}($path, $callback);
 ```
@@ -56,7 +56,7 @@ $app->run($request, $response);
 This method needs a Request and a Response implemented from PSR interfaces.
 
 ### Examples
-For this example, I use react/http server and the router. I created an other file where I wrote the routes and I include this file in the main program. This is a basic to-do list.<br />
+For this example, I use react/http server and the router. I created an other file where I wrote the routes and I include this file in the main program.<br />
 routing.php :
 ```PHP
 <?php
