@@ -6,7 +6,19 @@
 # PsrRouter
 Basic router developped with PSR interfaces.<br />
 Other libraries wich support PSR interfaces are needed in order to use the router, $request and $response parameters.<br />
-This router supports GET, POST, PUT, DELETE, OPTIONS, PATCH methods and can handle 400, 404 and 405 errors natively.<br />
+This router supports GET, POST, PUT, DELETE, OPTIONS, PATCH methods and can handle 400, 404 and 405 errors natively.<br /><br />
+If you use this router with Apache, don't forget to rewrite your URL in your .htaccess :
+```
+# Options
+Options -Indexes
+Options +FollowSymlinks
+
+# Rewriter URL
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ index.php [QSA,L] 
+```
 
 ### Installation
 ```Bash
