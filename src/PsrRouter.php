@@ -7,8 +7,9 @@
  */
 namespace PsrRouter;
 
-use Psr\Http\Message\RequestInterface as Request,
-	Psr\Http\Message\ResponseInterface as Response;
+use PsrRouter\Exception\RouterException,
+    Psr\Http\Message\RequestInterface as Request,
+    Psr\Http\Message\ResponseInterface as Response;
 
 class PsrRouter {
 
