@@ -251,7 +251,7 @@ class PsrRouter {
 		$strict = $this->getParam('STRICT_ROUTING');
 		$case = $this->getParam('CASE_SENSITIVE');
 		$method = $request->getMethod();
-		$url = $request->getRequestTarget();
+		$url = $request->getUri()->getPath();
 
 		//Matching
 		foreach($this->routes as $route) {
